@@ -1,0 +1,26 @@
+<strong>{{username}}</strong> - {{email}}
+
+<h3>Blogs</h3>
+<table>
+    <thead>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Tags</th>
+    </thead>
+    <tbody>
+    {{#each blog in blogs}}
+        <tr>
+            <td>{{blog.id}}</td>
+            <td>{{blog.title}}</td>
+            <td>{{blog.description}}</td>
+            <td>
+                {{#each tag in blog.tags}}
+                  <span>{{tag.name}}, </span>
+                {{/each}}
+            </td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+
