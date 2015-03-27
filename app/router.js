@@ -11,6 +11,7 @@ Router.map(function() {
   });
   this.route('note');
   this.route('users');
+  this.route('easy');
 });
 
 export default Router;

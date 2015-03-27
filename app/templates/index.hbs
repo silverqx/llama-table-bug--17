@@ -1,2 +1,42 @@
 Ahoj ss as
 {{test}}
+
+<div>
+  {{em-button default="Click Me"}}
+</div>
+
+<div>
+  {{em-button icon-classes="fa fa-trash-o" default="With Icon"}}
+</div>
+
+<div>
+  {{em-button class="btn btn-danger" default="Delete"}}
+</div>
+
+<div>
+  {{em-button on-click='onClick' default="Click Me!"}} <span>{{message}}</span>
+</div>
+
+<h2>Idx Modal</h2>
+
+<div>
+  <!--id is important, so we can reference it on the toggler component-->
+  {{#em-modal configName="bs" id="modal1"}}
+    {{#em-modal-title}}
+        <!--optional toggler to close the opened modal-->
+      {{#em-modal-toggler class="close"}}×Close{{/em-modal-toggler}}
+        <h4 class="modal-title">I'm a modal title</h4>
+    {{/em-modal-title}}
+      <!--the content of the modal...-->
+    {{#em-modal-body}}
+        One fine body…
+    {{/em-modal-body}}
+      <!--optional footer section of the modal, usually contains buttons-->
+    {{#em-modal-footer}}
+      {{#em-modal-toggler class="btn btn-default"}}Close{{/em-modal-toggler}}
+    {{/em-modal-footer}}
+  {{/em-modal}}
+
+    <!--the toggler to open the modal when clicked, modal-id property must reference the modal's id-->
+  {{#em-modal-toggler modal-id="modal1" class="btn btn-primary"}}Click me!{{/em-modal-toggler}}
+</div>
