@@ -1,22 +1,22 @@
 <div class="col-md-12">
 
-    <h2>Note</h2>
+  <h2>Note</h2>
 
-    <table>
-        <thead>
-        <th>ID</th>
-        <th>Message</th>
-        <th>Version</th>
-        </thead>
-        <tbody>
-        {{#each note in model}}
-            <tr>
-                <td>{{note.id}}</td>
-                <td>{{note.message}}</td>
-                <td>{{note.version}}</td>
-            </tr>
-        {{/each}}
-        </tbody>
-    </table>
+  <table>
+    <thead>
+    <th>ID</th>
+    <th>Message</th>
+    <th>Version</th>
+    </thead>
+    <tbody>
+    {{#each note in model}}
+      <tr>
+        <td>{{note.id}}</td>
+        <td>{{note.message}}</td>
+        <td>{{note.version}}</td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
 
 </div>
