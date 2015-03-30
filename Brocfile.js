@@ -19,19 +19,13 @@ var pickFiles = require('broccoli-static-compiler');
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-var fontAwesomeAssets = pickFiles('bower_components/font-awesome/fonts', {
-  srcDir: '/',
-  files: ['**/*.*'],
-  destDir: '/fonts'
-});
-
 var bootstrapSourcemap = pickFiles('bower_components/bootstrap/dist/css', {
   srcDir: '/',
   files: ['bootstrap.css.map'],
   destDir: '/assets'
 });
 
+//noinspection JSCheckFunctionSignatures
 app.import('bower_components/bootstrap/dist/css/bootstrap.css');
-app.import('bower_components/font-awesome/css/font-awesome.css');
 
-module.exports = app.toTree([fontAwesomeAssets, bootstrapSourcemap]);
+module.exports = app.toTree([bootstrapSourcemap]);
