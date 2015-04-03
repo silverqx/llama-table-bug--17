@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('note');
   this.route('users');
   this.route('easy');
+  this.route('test');
 });
 
 export default Router;
