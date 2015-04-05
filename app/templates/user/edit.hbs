@@ -1,0 +1,18 @@
+<div class="col-md-12">
+
+  <h2>User {{username}}</h2>
+
+  <div class="row">
+    <div class="col-md-4">
+      {{#em-form model=model submit_button=false}}
+        {{em-input property="id" type="hidden"}}
+        {{em-input property="username" label="Username" placeholder="Username"}}
+        {{em-input property="email" label="Email" placeholder="example@example.com" type="email"}}
+        <div class="form-actions">
+          <input disabled={{model.isntValid}} type="submit" class="btn btn-primary" value="Uložiť">
+        </div>
+      {{/em-form}}
+    </div>
+  </div>
+
+</div>

@@ -6,8 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('user', {
+  this.resource('user', {
     path: '/user/:user_id'
+  }, function() {
+    this.route('edit');
   });
   this.route('note');
   this.route('users');
