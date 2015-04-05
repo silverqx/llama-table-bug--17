@@ -16,6 +16,9 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+
+      // default hodnota
+      xdebug: false
     }
   };
 
@@ -37,10 +40,14 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+
+    // pre istotu
+    ENV.APP.xdebug = false;
   }
 
   if (environment === 'production') {
-
+    // pre istotu
+    ENV.APP.xdebug = false;
   }
 
   return ENV;
