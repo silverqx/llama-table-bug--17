@@ -1,5 +1,5 @@
 {
-  "name": "Crystal Ember Test",
+  "name": "embercli",
   "version": "0.0.1",
   "description": "Test application for Ember and Ember Data.",
   "private": true,
