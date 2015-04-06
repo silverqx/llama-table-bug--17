@@ -1,8 +1,8 @@
 <div class="col-md-12" role="main">
 
-  <h2 id="title">User {{username}}</h2>
+  <h2 id="title">User {{model.username}}</h2>
 
-  <strong>{{username}}</strong> - {{email}}
+  <strong>{{model.username}}</strong> - {{model.email}}
 
   <h3>Blogs</h3>
   <table>
@@ -13,7 +13,7 @@
     <th>Tags</th>
     </thead>
     <tbody>
-    {{#each blog in blogs}}
+    {{#each blog in model.blogs}}
       <tr>
         <td>{{blog.id}}</td>
         <td>{{blog.title}}</td>

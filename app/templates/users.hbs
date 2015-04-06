@@ -14,13 +14,13 @@
       </tr>
     </thead>
     <tbody>
-    {{#each model}}
+    {{#each user in model}}
       <tr>
-        <td>{{id}}</td>
-        <td>{{#link-to 'user' this}}{{username}}{{/link-to}}</td>
-        <td>{{email}}</td>
+        <td>{{user.id}}</td>
+        <td>{{#link-to 'user' user.id}}{{user.username}}{{/link-to}}</td>
+        <td>{{user.email}}</td>
         <td>
-          {{#link-to 'user.edit' this}}Edit{{/link-to}}
+          {{#link-to 'user.edit' user.id}}Edit{{/link-to}}
         </td>
         <td>
           {{#link-to 'users'}}Delete{{/link-to}}
