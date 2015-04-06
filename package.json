@@ -1,7 +1,7 @@
 {
-  "name": "embercli",
-  "version": "0.0.0",
-  "description": "Small description for embercli goes here",
+  "name": "Crystal Ember Test",
+  "version": "0.0.1",
+  "description": "Test application for Ember and Ember Data.",
   "private": true,
   "directories": {
     "doc": "doc",
